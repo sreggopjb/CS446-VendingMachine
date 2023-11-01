@@ -1,0 +1,11 @@
+#touchscreen{
+    width: 500px;
+    height: 800px;
+    margin: auto;
+    border-style: solid;
+    border-color: black;
+}
+p {
+    font-size: 30px;
+    text-align: center;
+}
