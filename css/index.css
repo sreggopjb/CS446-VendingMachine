@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;                                           
+  overflow: hidden;                                     
+  display: flex;                                        
+  flex-direction: column;                               
+  justify-content: space-between;                       
+  align-items: center;                                  
+  height: 100vh;                                        
+  background-image: url('../images/VendingMachine-BG.png');
+  background-repeat: no-repeat;                         
+  background-attachment: fixed;                         
+  background-size: cover;
+}             
+#tap2pay {
+  margin-top: 40%;
+}
+img {          
+  width: 100%;                                          
+  height: 100%;            
+  object-fit: contain;                                  
+  mix-blend-mode: multiply;
+}                          
+.button-container {  
+  margin-bottom: 40%;     
+  display: flex;          
+  justify-content: center;
+}                         
+button {                            
+  padding: 50px 60px;               
+  border: 15px;                     
+  border-style: solid;              
+  border-radius: 45px;              
+  border-color: green;              
+  background: rgba(51, 170, 51, .3);
+  font-size: 60px;                  
+  color: white;                     
+  cursor: pointer;                  
+}                                   

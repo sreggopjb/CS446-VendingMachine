@@ -1,0 +1,23 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 99%;
+  background-image: url('../images/VendingMachine-BG.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#touchscreen{
+  width: 90%;
+  height: 99%;
+  margin: auto;
+  margin-top: 2%;
+  border: 10px solid white;
+  border-radius: 20px;
+}
+p {
+  padding: 5%;
+  font-size: 100px;
+  color: white;
+  text-align: center;
+}

@@ -1,0 +1,29 @@
+body {
+	margin: 0;
+	padding: 0;
+	height: 99%;
+  background-image: url('../images/VendingMachine-BG.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}	
+h1{
+  margin-top: 60%;
+  text-align: center;
+  color: white;
+  font-size: 100px;
+}
+.button-container {
+  text-align: center;
+	margin-top: 50%;
+}
+button {
+	padding: 30px 80px;
+  margin: auto;
+	font-size: 80px;
+  color: white;
+  border: 10px solid green;
+  border-radius: 20px;
+  cursor: pointer;
+  background: rgba(51, 170, 51, .3);
+}
