@@ -17,8 +17,12 @@ body {
   height: 100%;
   position: relative;
 }
+header{
+  padding: 10px;
+  text-align: center;
+  font-size: 50px;
+}
 #items{
-  margin-top: 5%;
   height: 90%;
   overflow: auto;
   padding: 1%;
@@ -54,6 +58,25 @@ footer{
   height: 150px;
   padding-left: 30px;
 }
+#total_price{
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+#confirm{
+  float: left;
+  width: 40%;
+  height: 100%;
+}
+#cancel{
+  float: left;
+  width: 10%;
+  height: 100%;
+}
+#price_label{
+  height: 100%;
+  font-size: 100px;
+}
 #buttons{
   height: 80%;
   width: 30%;
@@ -67,7 +90,6 @@ footer{
   border-radius: 20px;
 }
 #cancelButton{
-  float: right;
   margin-right: 2%;
   margin-left: 2%;
 }
