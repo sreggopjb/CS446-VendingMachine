@@ -3,12 +3,15 @@
   <link rel="stylesheet" type="text/css" href="../css/VendingMenuStyle.css">
 </head>
 
-<body id="iylt">
+<body>
+  <iframe src="./categories.html" id="categoriesWidget" style="display: none;"></iframe>
   <div class="centered-buttons">
-    <a href="../index.html"><button class="button" id="menu_button">Payment</button></a>
-    <a href="touchscreen.html"><button class="button" id="menu_button">Products</button></a>
-    <a href="../index.html"><button class="button" id="cancel_button">Cancel Order</button></a>
+    <button class="button" id="openCategoriesWidget">Categories</button>
+    <a href="javascript:void(0);" onclick="redirectToParent('../index.html')"><button class="button" id="menu_button">Payment</button></a>
+    <a href="javascript:void(0);" onclick="redirectToParent('./touchscreen.html')"><button class="button" id="menu_button">Products</button></a>
+    <a href="javascript:void(0);" onclick="redirectToParent('../index.html')"><button class="button" id="cancel_button">Cancel Order</button></a>
   </div>
-  <a href="touchscreen.html"><button class="right-button" id="Return"><</button></a>
+  <button class="right-button" id="Return"><</button>
+  <script src="../scripts/vendingmenu.js"></script>
 </body>
 </html>

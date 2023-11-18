@@ -6,97 +6,46 @@
 </head>
 
 <body>
-    <a href="VendingMenu.html"><button id="menu">></button></a>
+    <iframe src="./VendingMenu.html" id="vendingMenuWidget" style="display: none;"></iframe>
+    <button id="openVendingMenu">></button>
     <div id="touchscreen">
-        <header>
-            <h1>Products</h1>
-            <div id="categoryFilters">
-                <label><input type="checkbox" class="category-checkbox" data-category="snack"> Snack</label>
-                <label><input type="checkbox" class="category-checkbox" data-category="drink"> Drink</label>
-            </div>
-        </header>
         <div id="items">
-            <div id="item" class="drink-item" onclick="changeColor(this, 2.5)">
+            <div id="item" class="drink-item all-item" onclick="changeColor(this, 2.5)">
                 <img src="../images/coca-cola.jpg" class="images">
                 <div class="item_name"><p>Coca-Cola</p></div>
             </div>
-            <div id="item" class="drink-item" onclick="changeColor(this, 2.0)">
+            <div id="item" class="drink-item all-item" onclick="changeColor(this, 2.0)">
                 <img src="../images/monster.jpg" class="images">
                 <div class="item_name"><p>Monster Energy</p></div>
             </div>
-            <div id="item" class="drink-item" onclick="changeColor(this, 2.0)">
+            <div id="item" class="drink-item all-item" onclick="changeColor(this, 2.0)">
                 <img src="../images/water.jpg" class="images">
                 <div class="item_name"><p>Dasani Water</p></div>
             </div>
-            <div id="item" class="snack-item" onclick="changeColor(this, 3.0)">
+            <div id="item" class="snack-item all-item" onclick="changeColor(this, 3.0)">
                 <img src="../images/doritos.jpg" class="images">
                 <div class="item_name"><p>Doritos</p></div>
             </div>
-            <div id="item" class="snack-item" onclick="changeColor(this, 2.5)">
+            <div id="item" class="snack-item all-item" onclick="changeColor(this, 2.5)">
                 <img src="../images/lays.jpg" class="images">
                 <div class="item_name"><p>Lays</p></div>
             </div>
-            <div id="item" class="snack-item" onclick="changeColor(this, 2.5)">
+            <div id="item" class="snack-item all-item" onclick="changeColor(this, 2.5)">
                 <img src="../images/snickers.jpg" class="images">
                 <div class="item_name"><p>Snickers Bar</p></div>
             </div>
-            <div id="item" class="snack-item" onclick="changeColor(this, 2.0)">
+            <div id="item" class="snack-item all-item" onclick="changeColor(this, 2.0)">
                 <img src="../images/oreo.jpg" class="images">
                 <div class="item_name"><p>Oreo Chocolate</p></div>
             </div>
         </div>
-        <!-- JavaScript code -->>
-        <script>
-            //compute total price and change background color for selected items
-            var totalPrice = 0.00;
-            function changeColor(itemDiv, price) {
-                // Check the current background color
-                var currentColor = window.getComputedStyle(itemDiv).backgroundColor;
-        
-                // Change the color based on the current color
-                if (currentColor === 'rgba(51, 170, 51, 0.3)') {
-                    itemDiv.style.backgroundColor = 'lightgreen';
-                    totalPrice += price;
-                } else {
-                    itemDiv.style.backgroundColor = 'rgba(51, 170, 51, 0.3)';
-                    totalPrice -= price;
-                }
-                document.getElementById('totalPrice').innerText = totalPrice.toFixed(2);
-            }
-
-            //Hanlding checkbox to filter category
-            document.getElementById('categoryFilters').addEventListener('change', function(event) {
-                var checkboxes = document.querySelectorAll('.category-checkbox');
-                var showAll = true;
-
-                checkboxes.forEach(function(checkbox) {
-                    var category = checkbox.getAttribute('data-category');
-                    var items = document.querySelectorAll('.' + category + '-item');
-                
-                    if (checkbox.checked) {
-                        showAll = false;
-                    }
-
-                    items.forEach(function(item) {
-                        item.style.display = checkbox.checked ? 'flex' : 'none';
-                    });
-                });
-
-                // Show all items if no checkbox is checked
-                if (showAll) {
-                    var allItems = document.querySelectorAll('#items > #item');
-                    allItems.forEach(function(item) {
-                        item.style.display = 'flex';
-                    });
-                }
-            });
-        </script>
+        <script src="../scripts/touchscreen.js"></script>
         <footer>
             <div id="total_price">
                 <label id="price_label">Total Price: $<span id="totalPrice">0.00</span></label>
             </div>
             <div id="confirm">
-                <a href="confirm.html"><button id="buttons">Confirm</button></a> 
+                <a href="confirm.html"><button id="confButton">Confirm</button></a> 
             </div>
             <div id="cancel">
                 <a id="cancelButton" href="../index.html"><img id="cancelOrder_img" src="../images/CancelButton.png"></a>
