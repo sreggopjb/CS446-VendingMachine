@@ -30,7 +30,7 @@ function changeColor(itemDiv, price) {
   var confButton = document.getElementById('confButton');
   // Change the color based on the current color
   if (currentColor === 'rgba(51, 170, 51, 0.3)') {
-      itemDiv.style.backgroundColor = 'lightgreen';
+      itemDiv.style.backgroundColor = 'rgba(51, 255, 51, 0.6)';
       totalPrice += price;
   } else {
       itemDiv.style.backgroundColor = 'rgba(51, 170, 51, 0.3)';

@@ -28,9 +28,8 @@ body{
   font-weight: bold;
   font-size:120px;
   color: white;
-  border:4px solid white;
+  border:5px solid white;
   background: rgba(51, 170, 51, .3);
-  cursor: pointer;
 }
 .button{
 	display: inline-block;
