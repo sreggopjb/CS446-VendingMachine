@@ -96,9 +96,9 @@ footer{
   margin-right: 15px;
   font-size: 50px;
   float: right;
-  color: white;
+  color: gray;
   background: rgba(51, 170, 51, .3);
-  border: 10px solid white;
+  border: 10px solid gray;
   border-radius: 20px;
 }
 #cancelButton{

@@ -28,6 +28,7 @@ function changeColor(itemDiv, price) {
   // Check the current background color
   var currentColor = window.getComputedStyle(itemDiv).backgroundColor;
   var confButton = document.getElementById('confButton');
+  var confAnchor = document.getElementById('confAnchor');
   // Change the color based on the current color
   if (currentColor === 'rgba(51, 170, 51, 0.3)') {
       itemDiv.style.backgroundColor = 'rgba(51, 255, 51, 0.6)';
@@ -40,8 +41,12 @@ function changeColor(itemDiv, price) {
   //change confirm color to green if price is not 0
   if (totalPrice != 0) {
     confButton.style.border = '10px solid limegreen';
+    confButton.style.color = 'white';
+    confAnchor.href = 'confirm.html';
   } else {
-    confButton.style.border = '10px solid white';
+    confButton.style.border = '10px solid gray';
+    confButton.style.color = 'gray';
+    confAnchor.href = '';
   }
 }
 //Hanlding category filter request
