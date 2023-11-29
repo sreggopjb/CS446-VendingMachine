@@ -38,6 +38,8 @@ header{
   margin-right: 30px;
   margin-top: 5%;
   margin-bottom: 5%;
+  display: flex;
+  align-items: center;
 }
 .images{
   width: 100px;
@@ -51,6 +53,14 @@ header{
   margin: auto;
   font-size: 60px;
   font-weight: bold;
+  float: left;
+}
+.item_price{
+  float: left;
+  font-size: 60px;
+  font-weight: bold;
+  margin-right: 10px;
+  color: whitesmoke;
 }
 footer{
   border-top: 1.875px solid white;
